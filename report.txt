@@ -1,0 +1,797 @@
+fsg-rasterizer-api@1.0.0
+│ /Users/pallu/Documents/Projects/Miracle/FSG/Sandbox/FSGRasterizerAPI
+│ a rest api to rasterize complex images
+│ https://github.com/fourthofaugust
+├─┬ @types/express@4.17.8
+│ │ TypeScript definitions for Express
+│ │ git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ ├─┬ @types/body-parser@1.19.0
+│ │ │ TypeScript definitions for body-parser
+│ │ │ git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ │ https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ │ ├─┬ @types/connect@3.4.33
+│ │ │ │ TypeScript definitions for connect
+│ │ │ │ git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ │ │ https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ │ │ └── @types/node@13.13.20 deduped
+│ │ │     TypeScript definitions for Node.js
+│ │ │     git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ │     https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ │ └── @types/node@13.13.20 deduped
+│ │     TypeScript definitions for Node.js
+│ │     git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │     https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ ├─┬ @types/express-serve-static-core@4.17.12
+│ │ │ TypeScript definitions for Express
+│ │ │ git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ │ https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ │ ├── @types/node@13.13.20 deduped
+│ │ │   TypeScript definitions for Node.js
+│ │ │   git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ │   https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ │ ├── @types/qs@6.9.4 deduped
+│ │ │   TypeScript definitions for qs
+│ │ │   git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ │   https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ │ └── @types/range-parser@1.2.3
+│ │     TypeScript definitions for range-parser
+│ │     git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │     https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ ├── @types/qs@6.9.4
+│ │   TypeScript definitions for qs
+│ │   git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │   https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ └─┬ @types/serve-static@1.13.5
+│   │ TypeScript definitions for serve-static
+│   │ git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│   │ https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│   ├── @types/express-serve-static-core@4.17.12 deduped
+│   │   TypeScript definitions for Express
+│   │   git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│   │   https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│   └── @types/mime@2.0.3
+│       TypeScript definitions for mime
+│       git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│       https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+├─┬ @types/helmet@0.0.48
+│ │ TypeScript definitions for helmet
+│ │ git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│ │ https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+│ └── @types/express@4.17.8 deduped
+│     TypeScript definitions for Express
+│     git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│     https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+├── @types/node@13.13.20
+│   TypeScript definitions for Node.js
+│   git+https://github.com/DefinitelyTyped/DefinitelyTyped.git
+│   https://github.com/DefinitelyTyped/DefinitelyTyped#readme
+├─┬ aws-sdk@2.753.0
+│ │ AWS SDK for JavaScript
+│ │ git://github.com/aws/aws-sdk-js.git
+│ │ https://github.com/aws/aws-sdk-js
+│ ├─┬ buffer@4.9.2
+│ │ │ Node.js Buffer API, for the browser
+│ │ │ git://github.com/feross/buffer.git
+│ │ │ https://github.com/feross/buffer
+│ │ ├── base64-js@1.3.1
+│ │ │   Base64 encoding/decoding in pure JS
+│ │ │   git://github.com/beatgammit/base64-js.git
+│ │ │   https://github.com/beatgammit/base64-js
+│ │ ├── ieee754@1.1.13 deduped
+│ │ │   Read/write IEEE754 floating point numbers from/to a Buffer or array-like object
+│ │ │   git://github.com/feross/ieee754.git
+│ │ │   https://github.com/feross/ieee754#readme
+│ │ └── isarray@1.0.0
+│ │     Array#isArray for older browsers
+│ │     git://github.com/juliangruber/isarray.git
+│ │     https://github.com/juliangruber/isarray
+│ ├── events@1.1.1
+│ │   Node's event emitter for all engines.
+│ │   git://github.com/Gozala/events.git
+│ │   https://github.com/Gozala/events#readme
+│ ├── ieee754@1.1.13
+│ │   Read/write IEEE754 floating point numbers from/to a Buffer or array-like object
+│ │   git://github.com/feross/ieee754.git
+│ │   https://github.com/feross/ieee754#readme
+│ ├── jmespath@0.15.0
+│ │   JMESPath implementation in javascript
+│ │   git://github.com/jmespath/jmespath.js.git
+│ │   https://github.com/jmespath/jmespath.js
+│ ├── querystring@0.2.0
+│ │   Node's querystring module for all engines.
+│ │   git://github.com/Gozala/querystring.git
+│ │   https://github.com/Gozala/querystring#readme
+│ ├── sax@1.2.1
+│ │   An evented streaming XML parser in JavaScript
+│ │   git://github.com/isaacs/sax-js.git
+│ │   https://github.com/isaacs/sax-js#readme
+│ ├─┬ url@0.10.3
+│ │ │ The core `url` packaged standalone for use with Browserify.
+│ │ │ git+https://github.com/defunctzombie/node-url.git
+│ │ │ https://github.com/defunctzombie/node-url#readme
+│ │ ├── punycode@1.3.2
+│ │ │   A robust Punycode converter that fully complies to RFC 3492 and RFC 5891, and works on nearly all JavaScript platforms.
+│ │ │   git+https://github.com/bestiejs/punycode.js.git
+│ │ │   https://mths.be/punycode
+│ │ └── querystring@0.2.0 deduped
+│ │     Node's querystring module for all engines.
+│ │     git://github.com/Gozala/querystring.git
+│ │     https://github.com/Gozala/querystring#readme
+│ ├── uuid@3.3.2
+│ │   RFC4122 (v1, v4, and v5) UUIDs
+│ │   git+https://github.com/kelektiv/node-uuid.git
+│ │   https://github.com/kelektiv/node-uuid#readme
+│ └─┬ xml2js@0.4.19
+│   │ Simple XML to JavaScript object converter.
+│   │ git+https://github.com/Leonidas-from-XIV/node-xml2js.git
+│   │ https://github.com/Leonidas-from-XIV/node-xml2js
+│   ├── sax@1.2.1 deduped
+│   │   An evented streaming XML parser in JavaScript
+│   │   git://github.com/isaacs/sax-js.git
+│   │   https://github.com/isaacs/sax-js#readme
+│   └── xmlbuilder@9.0.7
+│       An XML builder for node.js
+│       git://github.com/oozcitak/xmlbuilder-js.git
+│       http://github.com/oozcitak/xmlbuilder-js
+├─┬ body-parser@1.19.0
+│ │ Node.js body parsing middleware
+│ │ git+https://github.com/expressjs/body-parser.git
+│ │ https://github.com/expressjs/body-parser#readme
+│ ├── bytes@3.1.0
+│ │   Utility to parse a string bytes to bytes and vice-versa
+│ │   git+https://github.com/visionmedia/bytes.js.git
+│ │   https://github.com/visionmedia/bytes.js#readme
+│ ├── content-type@1.0.4
+│ │   Create and parse HTTP Content-Type header
+│ │   git+https://github.com/jshttp/content-type.git
+│ │   https://github.com/jshttp/content-type#readme
+│ ├─┬ debug@2.6.9
+│ │ │ small debugging utility
+│ │ │ git://github.com/visionmedia/debug.git
+│ │ │ https://github.com/visionmedia/debug#readme
+│ │ └── ms@2.0.0
+│ │     Tiny milisecond conversion utility
+│ │     git+https://github.com/zeit/ms.git
+│ │     https://github.com/zeit/ms#readme
+│ ├── depd@1.1.2
+│ │   Deprecate all the things
+│ │   git+https://github.com/dougwilson/nodejs-depd.git
+│ │   https://github.com/dougwilson/nodejs-depd#readme
+│ ├─┬ http-errors@1.7.2
+│ │ │ Create HTTP error objects
+│ │ │ git+https://github.com/jshttp/http-errors.git
+│ │ │ https://github.com/jshttp/http-errors#readme
+│ │ ├── depd@1.1.2 deduped
+│ │ │   Deprecate all the things
+│ │ │   git+https://github.com/dougwilson/nodejs-depd.git
+│ │ │   https://github.com/dougwilson/nodejs-depd#readme
+│ │ ├── inherits@2.0.3
+│ │ │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │ │   git://github.com/isaacs/inherits.git
+│ │ │   https://github.com/isaacs/inherits#readme
+│ │ ├── setprototypeof@1.1.1 deduped
+│ │ │   A small polyfill for Object.setprototypeof
+│ │ │   git+https://github.com/wesleytodd/setprototypeof.git
+│ │ │   https://github.com/wesleytodd/setprototypeof
+│ │ ├── statuses@1.5.0 deduped
+│ │ │   HTTP status utility
+│ │ │   git+https://github.com/jshttp/statuses.git
+│ │ │   https://github.com/jshttp/statuses#readme
+│ │ └── toidentifier@1.0.0
+│ │     Convert a string of words to a JavaScript identifier
+│ │     git+https://github.com/component/toidentifier.git
+│ │     https://github.com/component/toidentifier#readme
+│ ├─┬ iconv-lite@0.4.24
+│ │ │ Convert character encodings in pure javascript.
+│ │ │ git://github.com/ashtuchkin/iconv-lite.git
+│ │ │ https://github.com/ashtuchkin/iconv-lite
+│ │ └── safer-buffer@2.1.2
+│ │     Modern Buffer API polyfill without footguns
+│ │     git+https://github.com/ChALkeR/safer-buffer.git
+│ │     https://github.com/ChALkeR/safer-buffer#readme
+│ ├─┬ on-finished@2.3.0
+│ │ │ Execute a callback when a request closes, finishes, or errors
+│ │ │ git+https://github.com/jshttp/on-finished.git
+│ │ │ https://github.com/jshttp/on-finished#readme
+│ │ └── ee-first@1.1.1
+│ │     return the first event in a set of ee/event pairs
+│ │     git+https://github.com/jonathanong/ee-first.git
+│ │     https://github.com/jonathanong/ee-first#readme
+│ ├── qs@6.7.0
+│ │   A querystring parser that supports nesting and arrays, with a depth limit
+│ │   git+https://github.com/ljharb/qs.git
+│ │   https://github.com/ljharb/qs
+│ ├─┬ raw-body@2.4.0
+│ │ │ Get and validate the raw body of a readable stream.
+│ │ │ git+https://github.com/stream-utils/raw-body.git
+│ │ │ https://github.com/stream-utils/raw-body#readme
+│ │ ├── bytes@3.1.0 deduped
+│ │ │   Utility to parse a string bytes to bytes and vice-versa
+│ │ │   git+https://github.com/visionmedia/bytes.js.git
+│ │ │   https://github.com/visionmedia/bytes.js#readme
+│ │ ├── http-errors@1.7.2 deduped
+│ │ │   Create HTTP error objects
+│ │ │   git+https://github.com/jshttp/http-errors.git
+│ │ │   https://github.com/jshttp/http-errors#readme
+│ │ ├── iconv-lite@0.4.24 deduped
+│ │ │   Convert character encodings in pure javascript.
+│ │ │   git://github.com/ashtuchkin/iconv-lite.git
+│ │ │   https://github.com/ashtuchkin/iconv-lite
+│ │ └── unpipe@1.0.0
+│ │     Unpipe a stream from all destinations
+│ │     git+https://github.com/stream-utils/unpipe.git
+│ │     https://github.com/stream-utils/unpipe#readme
+│ └─┬ type-is@1.6.18
+│   │ Infer the content-type of a request.
+│   │ git+https://github.com/jshttp/type-is.git
+│   │ https://github.com/jshttp/type-is#readme
+│   ├── media-typer@0.3.0
+│   │   Simple RFC 6838 media type parser and formatter
+│   │   git+https://github.com/jshttp/media-typer.git
+│   │   https://github.com/jshttp/media-typer#readme
+│   └─┬ mime-types@2.1.27
+│     │ The ultimate javascript content-type utility.
+│     │ git+https://github.com/jshttp/mime-types.git
+│     │ https://github.com/jshttp/mime-types#readme
+│     └── mime-db@1.44.0
+│         Media Type Database
+│         git+https://github.com/jshttp/mime-db.git
+│         https://github.com/jshttp/mime-db#readme
+├── dotenv@8.2.0
+│   Loads environment variables from .env file
+│   git://github.com/motdotla/dotenv.git
+│   https://github.com/motdotla/dotenv#readme
+├─┬ express@4.17.1
+│ │ Fast, unopinionated, minimalist web framework
+│ │ git+https://github.com/expressjs/express.git
+│ │ http://expressjs.com/
+│ ├─┬ accepts@1.3.7
+│ │ │ Higher-level content negotiation
+│ │ │ git+https://github.com/jshttp/accepts.git
+│ │ │ https://github.com/jshttp/accepts#readme
+│ │ ├── mime-types@2.1.27 deduped
+│ │ │   The ultimate javascript content-type utility.
+│ │ │   git+https://github.com/jshttp/mime-types.git
+│ │ │   https://github.com/jshttp/mime-types#readme
+│ │ └── negotiator@0.6.2
+│ │     HTTP content negotiation
+│ │     git+https://github.com/jshttp/negotiator.git
+│ │     https://github.com/jshttp/negotiator#readme
+│ ├── array-flatten@1.1.1
+│ │   Flatten an array of nested arrays into a single flat array
+│ │   git://github.com/blakeembrey/array-flatten.git
+│ │   https://github.com/blakeembrey/array-flatten
+│ ├── body-parser@1.19.0 deduped
+│ │   Node.js body parsing middleware
+│ │   git+https://github.com/expressjs/body-parser.git
+│ │   https://github.com/expressjs/body-parser#readme
+│ ├─┬ content-disposition@0.5.3
+│ │ │ Create and parse Content-Disposition header
+│ │ │ git+https://github.com/jshttp/content-disposition.git
+│ │ │ https://github.com/jshttp/content-disposition#readme
+│ │ └── safe-buffer@5.1.2 deduped
+│ │     Safer Node.js Buffer API
+│ │     git://github.com/feross/safe-buffer.git
+│ │     https://github.com/feross/safe-buffer
+│ ├── content-type@1.0.4 deduped
+│ │   Create and parse HTTP Content-Type header
+│ │   git+https://github.com/jshttp/content-type.git
+│ │   https://github.com/jshttp/content-type#readme
+│ ├── cookie@0.4.0
+│ │   HTTP server cookie parsing and serialization
+│ │   git+https://github.com/jshttp/cookie.git
+│ │   https://github.com/jshttp/cookie#readme
+│ ├── cookie-signature@1.0.6
+│ │   Sign and unsign cookies
+│ │   git+https://github.com/visionmedia/node-cookie-signature.git
+│ │   https://github.com/visionmedia/node-cookie-signature#readme
+│ ├── debug@2.6.9 deduped
+│ │   small debugging utility
+│ │   git://github.com/visionmedia/debug.git
+│ │   https://github.com/visionmedia/debug#readme
+│ ├── depd@1.1.2 deduped
+│ │   Deprecate all the things
+│ │   git+https://github.com/dougwilson/nodejs-depd.git
+│ │   https://github.com/dougwilson/nodejs-depd#readme
+│ ├── encodeurl@1.0.2
+│ │   Encode a URL to a percent-encoded form, excluding already-encoded sequences
+│ │   git+https://github.com/pillarjs/encodeurl.git
+│ │   https://github.com/pillarjs/encodeurl#readme
+│ ├── escape-html@1.0.3
+│ │   Escape string for use in HTML
+│ │   git+https://github.com/component/escape-html.git
+│ │   https://github.com/component/escape-html#readme
+│ ├── etag@1.8.1
+│ │   Create simple HTTP ETags
+│ │   git+https://github.com/jshttp/etag.git
+│ │   https://github.com/jshttp/etag#readme
+│ ├─┬ finalhandler@1.1.2
+│ │ │ Node.js final http responder
+│ │ │ git+https://github.com/pillarjs/finalhandler.git
+│ │ │ https://github.com/pillarjs/finalhandler#readme
+│ │ ├── debug@2.6.9 deduped
+│ │ │   small debugging utility
+│ │ │   git://github.com/visionmedia/debug.git
+│ │ │   https://github.com/visionmedia/debug#readme
+│ │ ├── encodeurl@1.0.2 deduped
+│ │ │   Encode a URL to a percent-encoded form, excluding already-encoded sequences
+│ │ │   git+https://github.com/pillarjs/encodeurl.git
+│ │ │   https://github.com/pillarjs/encodeurl#readme
+│ │ ├── escape-html@1.0.3 deduped
+│ │ │   Escape string for use in HTML
+│ │ │   git+https://github.com/component/escape-html.git
+│ │ │   https://github.com/component/escape-html#readme
+│ │ ├── on-finished@2.3.0 deduped
+│ │ │   Execute a callback when a request closes, finishes, or errors
+│ │ │   git+https://github.com/jshttp/on-finished.git
+│ │ │   https://github.com/jshttp/on-finished#readme
+│ │ ├── parseurl@1.3.3 deduped
+│ │ │   parse a url with memoization
+│ │ │   git+https://github.com/pillarjs/parseurl.git
+│ │ │   https://github.com/pillarjs/parseurl#readme
+│ │ ├── statuses@1.5.0 deduped
+│ │ │   HTTP status utility
+│ │ │   git+https://github.com/jshttp/statuses.git
+│ │ │   https://github.com/jshttp/statuses#readme
+│ │ └── unpipe@1.0.0 deduped
+│ │     Unpipe a stream from all destinations
+│ │     git+https://github.com/stream-utils/unpipe.git
+│ │     https://github.com/stream-utils/unpipe#readme
+│ ├── fresh@0.5.2
+│ │   HTTP response freshness testing
+│ │   git+https://github.com/jshttp/fresh.git
+│ │   https://github.com/jshttp/fresh#readme
+│ ├── merge-descriptors@1.0.1
+│ │   Merge objects using descriptors
+│ │   git+https://github.com/component/merge-descriptors.git
+│ │   https://github.com/component/merge-descriptors#readme
+│ ├── methods@1.1.2
+│ │   HTTP methods that node supports
+│ │   git+https://github.com/jshttp/methods.git
+│ │   https://github.com/jshttp/methods#readme
+│ ├── on-finished@2.3.0 deduped
+│ │   Execute a callback when a request closes, finishes, or errors
+│ │   git+https://github.com/jshttp/on-finished.git
+│ │   https://github.com/jshttp/on-finished#readme
+│ ├── parseurl@1.3.3
+│ │   parse a url with memoization
+│ │   git+https://github.com/pillarjs/parseurl.git
+│ │   https://github.com/pillarjs/parseurl#readme
+│ ├── path-to-regexp@0.1.7
+│ │   Express style path to RegExp utility
+│ │   git+https://github.com/component/path-to-regexp.git
+│ │   https://github.com/component/path-to-regexp#readme
+│ ├─┬ proxy-addr@2.0.6
+│ │ │ Determine address of proxied request
+│ │ │ git+https://github.com/jshttp/proxy-addr.git
+│ │ │ https://github.com/jshttp/proxy-addr#readme
+│ │ ├── forwarded@0.1.2
+│ │ │   Parse HTTP X-Forwarded-For header
+│ │ │   git+https://github.com/jshttp/forwarded.git
+│ │ │   https://github.com/jshttp/forwarded#readme
+│ │ └── ipaddr.js@1.9.1
+│ │     A library for manipulating IPv4 and IPv6 addresses in JavaScript.
+│ │     git://github.com/whitequark/ipaddr.js.git
+│ │     https://github.com/whitequark/ipaddr.js#readme
+│ ├── qs@6.7.0 deduped
+│ │   A querystring parser that supports nesting and arrays, with a depth limit
+│ │   git+https://github.com/ljharb/qs.git
+│ │   https://github.com/ljharb/qs
+│ ├── range-parser@1.2.1
+│ │   Range header field string parser
+│ │   git+https://github.com/jshttp/range-parser.git
+│ │   https://github.com/jshttp/range-parser#readme
+│ ├── safe-buffer@5.1.2
+│ │   Safer Node.js Buffer API
+│ │   git://github.com/feross/safe-buffer.git
+│ │   https://github.com/feross/safe-buffer
+│ ├─┬ send@0.17.1
+│ │ │ Better streaming static file server with Range and conditional-GET support
+│ │ │ git+https://github.com/pillarjs/send.git
+│ │ │ https://github.com/pillarjs/send#readme
+│ │ ├── debug@2.6.9 deduped
+│ │ │   small debugging utility
+│ │ │   git://github.com/visionmedia/debug.git
+│ │ │   https://github.com/visionmedia/debug#readme
+│ │ ├── depd@1.1.2 deduped
+│ │ │   Deprecate all the things
+│ │ │   git+https://github.com/dougwilson/nodejs-depd.git
+│ │ │   https://github.com/dougwilson/nodejs-depd#readme
+│ │ ├── destroy@1.0.4
+│ │ │   destroy a stream if possible
+│ │ │   git+https://github.com/stream-utils/destroy.git
+│ │ │   https://github.com/stream-utils/destroy#readme
+│ │ ├── encodeurl@1.0.2 deduped
+│ │ │   Encode a URL to a percent-encoded form, excluding already-encoded sequences
+│ │ │   git+https://github.com/pillarjs/encodeurl.git
+│ │ │   https://github.com/pillarjs/encodeurl#readme
+│ │ ├── escape-html@1.0.3 deduped
+│ │ │   Escape string for use in HTML
+│ │ │   git+https://github.com/component/escape-html.git
+│ │ │   https://github.com/component/escape-html#readme
+│ │ ├── etag@1.8.1 deduped
+│ │ │   Create simple HTTP ETags
+│ │ │   git+https://github.com/jshttp/etag.git
+│ │ │   https://github.com/jshttp/etag#readme
+│ │ ├── fresh@0.5.2 deduped
+│ │ │   HTTP response freshness testing
+│ │ │   git+https://github.com/jshttp/fresh.git
+│ │ │   https://github.com/jshttp/fresh#readme
+│ │ ├── http-errors@1.7.2 deduped
+│ │ │   Create HTTP error objects
+│ │ │   git+https://github.com/jshttp/http-errors.git
+│ │ │   https://github.com/jshttp/http-errors#readme
+│ │ ├── mime@1.6.0
+│ │ │   A comprehensive library for mime-type mapping
+│ │ │   git+https://github.com/broofa/node-mime.git
+│ │ │   https://github.com/broofa/node-mime#readme
+│ │ ├── ms@2.1.1
+│ │ │   Tiny millisecond conversion utility
+│ │ │   git+https://github.com/zeit/ms.git
+│ │ │   https://github.com/zeit/ms#readme
+│ │ ├── on-finished@2.3.0 deduped
+│ │ │   Execute a callback when a request closes, finishes, or errors
+│ │ │   git+https://github.com/jshttp/on-finished.git
+│ │ │   https://github.com/jshttp/on-finished#readme
+│ │ ├── range-parser@1.2.1 deduped
+│ │ │   Range header field string parser
+│ │ │   git+https://github.com/jshttp/range-parser.git
+│ │ │   https://github.com/jshttp/range-parser#readme
+│ │ └── statuses@1.5.0 deduped
+│ │     HTTP status utility
+│ │     git+https://github.com/jshttp/statuses.git
+│ │     https://github.com/jshttp/statuses#readme
+│ ├─┬ serve-static@1.14.1
+│ │ │ Serve static files
+│ │ │ git+https://github.com/expressjs/serve-static.git
+│ │ │ https://github.com/expressjs/serve-static#readme
+│ │ ├── encodeurl@1.0.2 deduped
+│ │ │   Encode a URL to a percent-encoded form, excluding already-encoded sequences
+│ │ │   git+https://github.com/pillarjs/encodeurl.git
+│ │ │   https://github.com/pillarjs/encodeurl#readme
+│ │ ├── escape-html@1.0.3 deduped
+│ │ │   Escape string for use in HTML
+│ │ │   git+https://github.com/component/escape-html.git
+│ │ │   https://github.com/component/escape-html#readme
+│ │ ├── parseurl@1.3.3 deduped
+│ │ │   parse a url with memoization
+│ │ │   git+https://github.com/pillarjs/parseurl.git
+│ │ │   https://github.com/pillarjs/parseurl#readme
+│ │ └── send@0.17.1 deduped
+│ │     Better streaming static file server with Range and conditional-GET support
+│ │     git+https://github.com/pillarjs/send.git
+│ │     https://github.com/pillarjs/send#readme
+│ ├── setprototypeof@1.1.1
+│ │   A small polyfill for Object.setprototypeof
+│ │   git+https://github.com/wesleytodd/setprototypeof.git
+│ │   https://github.com/wesleytodd/setprototypeof
+│ ├── statuses@1.5.0
+│ │   HTTP status utility
+│ │   git+https://github.com/jshttp/statuses.git
+│ │   https://github.com/jshttp/statuses#readme
+│ ├── type-is@1.6.18 deduped
+│ │   Infer the content-type of a request.
+│ │   git+https://github.com/jshttp/type-is.git
+│ │   https://github.com/jshttp/type-is#readme
+│ ├── utils-merge@1.0.1
+│ │   merge() utility function
+│ │   git://github.com/jaredhanson/utils-merge.git
+│ │   https://github.com/jaredhanson/utils-merge#readme
+│ └── vary@1.1.2
+│     Manipulate the HTTP Vary header
+│     git+https://github.com/jshttp/vary.git
+│     https://github.com/jshttp/vary#readme
+├── helmet@4.1.1
+│   help secure Express/Connect apps with various HTTP headers
+│   git://github.com/helmetjs/helmet.git
+│   https://helmetjs.github.io/
+├─┬ psd@3.2.0
+│ │ A general purpose Photoshop file parser.
+│ │ git+ssh://git@github.com/meltingice/psd.js.git
+│ │ https://github.com/meltingice/psd.js#readme
+│ ├─┬ coffee-script@1.7.1
+│ │ │ Unfancy JavaScript
+│ │ │ git://github.com/jashkenas/coffee-script.git
+│ │ │ http://coffeescript.org
+│ │ └── mkdirp@0.3.5
+│ │     Recursively mkdir, like `mkdir -p`
+│ │     git+ssh://git@github.com/substack/node-mkdirp.git
+│ │     https://github.com/substack/node-mkdirp#readme
+│ ├── coffeescript-module@0.2.1
+│ │   A base class for your Coffeescript projects
+│ │   git+https://github.com/meltingice/coffeescript-module.git
+│ │   http://meltingice.net/2013/03/06/a-coffeescript-base-class/
+│ ├── iconv-lite@0.4.24 deduped
+│ │   Convert character encodings in pure javascript.
+│ │   git://github.com/ashtuchkin/iconv-lite.git
+│ │   https://github.com/ashtuchkin/iconv-lite
+│ ├── jspack@0.0.4
+│ │   JavaScript library to pack primitives to octet arrays, including int64 support, packaged for NodeJS.
+│ │   git://github.com/birchroad/node-jspack.git
+│ │   https://github.com/birchroad/node-jspack
+│ ├── lodash@2.4.2
+│ │   A utility library delivering consistency, customization, performance, & extras.
+│ │   git+https://github.com/lodash/lodash.git
+│ │   http://lodash.com/
+│ ├─┬ parse-engine-data@0.1.2
+│ │ │ parse engine data in psd file
+│ │ │ git://github.com/imgqb/parseEngineData.git
+│ │ │ https://github.com/imgqb/parseEngineData
+│ │ └── iconv-lite@0.4.24 deduped
+│ │     Convert character encodings in pure javascript.
+│ │     git://github.com/ashtuchkin/iconv-lite.git
+│ │     https://github.com/ashtuchkin/iconv-lite
+│ ├── pngjs@3.2.0
+│ │   PNG encoder/decoder in pure JS, supporting any bit size & interlace, async & sync with full test suite.
+│ │   git://github.com/lukeapage/pngjs2.git
+│ │   https://github.com/lukeapage/pngjs
+│ └── rsvp@3.0.21
+│     A lightweight library that provides tools for organizing asynchronous code
+│     git+https://github.com/tildeio/rsvp.js.git
+│     https://github.com/tildeio/rsvp.js#readme
+├─┬ rimraf@3.0.2
+│ │ A deep deletion module for node (like `rm -rf`)
+│ │ git://github.com/isaacs/rimraf.git
+│ │ https://github.com/isaacs/rimraf#readme
+│ └─┬ glob@7.1.4
+│   │ a little globber
+│   │ git://github.com/isaacs/node-glob.git
+│   │ https://github.com/isaacs/node-glob#readme
+│   ├── fs.realpath@1.0.0
+│   │   Use node's fs.realpath, but fall back to the JS implementation if the native one fails
+│   │   git+https://github.com/isaacs/fs.realpath.git
+│   │   https://github.com/isaacs/fs.realpath#readme
+│   ├─┬ inflight@1.0.6
+│   │ │ Add callbacks to requests in flight to avoid async duplication
+│   │ │ git+https://github.com/npm/inflight.git
+│   │ │ https://github.com/isaacs/inflight
+│   │ ├── once@1.4.0 deduped
+│   │ │   Run a function exactly one time
+│   │ │   git://github.com/isaacs/once.git
+│   │ │   https://github.com/isaacs/once#readme
+│   │ └── wrappy@1.0.2
+│   │     Callback wrapping utility
+│   │     git+https://github.com/npm/wrappy.git
+│   │     https://github.com/npm/wrappy
+│   ├── inherits@2.0.3 deduped
+│   │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│   │   git://github.com/isaacs/inherits.git
+│   │   https://github.com/isaacs/inherits#readme
+│   ├─┬ minimatch@3.0.4
+│   │ │ a glob matcher in javascript
+│   │ │ git://github.com/isaacs/minimatch.git
+│   │ │ https://github.com/isaacs/minimatch#readme
+│   │ └─┬ brace-expansion@1.1.11
+│   │   │ Brace expansion as known from sh/bash
+│   │   │ git://github.com/juliangruber/brace-expansion.git
+│   │   │ https://github.com/juliangruber/brace-expansion
+│   │   ├── balanced-match@1.0.0
+│   │   │   Match balanced character pairs, like "{" and "}"
+│   │   │   git://github.com/juliangruber/balanced-match.git
+│   │   │   https://github.com/juliangruber/balanced-match
+│   │   └── concat-map@0.0.1
+│   │       concatenative mapdashery
+│   │       git://github.com/substack/node-concat-map.git
+│   │       https://github.com/substack/node-concat-map#readme
+│   ├─┬ once@1.4.0
+│   │ │ Run a function exactly one time
+│   │ │ git://github.com/isaacs/once.git
+│   │ │ https://github.com/isaacs/once#readme
+│   │ └── wrappy@1.0.2 deduped
+│   │     Callback wrapping utility
+│   │     git+https://github.com/npm/wrappy.git
+│   │     https://github.com/npm/wrappy
+│   └── path-is-absolute@1.0.1
+│       Node.js 0.12 path.isAbsolute() ponyfill
+│       git+https://github.com/sindresorhus/path-is-absolute.git
+│       https://github.com/sindresorhus/path-is-absolute#readme
+├─┬ ts-lint@4.5.1
+│ │ An extensible static analysis linter for the TypeScript language
+│ │ git+https://github.com/palantir/tslint.git
+│ │ https://github.com/palantir/tslint#readme
+│ ├─┬ babel-code-frame@6.26.0
+│ │ │ Generate errors that contain a code frame that point to source locations.
+│ │ │ https://github.com/babel/babel/tree/master/packages/babel-code-frame
+│ │ │ https://babeljs.io/
+│ │ ├─┬ chalk@1.1.3
+│ │ │ │ Terminal string styling done right. Much color.
+│ │ │ │ git+https://github.com/chalk/chalk.git
+│ │ │ │ https://github.com/chalk/chalk#readme
+│ │ │ ├── ansi-styles@2.2.1
+│ │ │ │   ANSI escape codes for styling strings in the terminal
+│ │ │ │   git+https://github.com/chalk/ansi-styles.git
+│ │ │ │   https://github.com/chalk/ansi-styles#readme
+│ │ │ ├── escape-string-regexp@1.0.5
+│ │ │ │   Escape RegExp special characters
+│ │ │ │   git+https://github.com/sindresorhus/escape-string-regexp.git
+│ │ │ │   https://github.com/sindresorhus/escape-string-regexp#readme
+│ │ │ ├─┬ has-ansi@2.0.0
+│ │ │ │ │ Check if a string has ANSI escape codes
+│ │ │ │ │ git+https://github.com/sindresorhus/has-ansi.git
+│ │ │ │ │ https://github.com/sindresorhus/has-ansi#readme
+│ │ │ │ └── ansi-regex@2.1.1
+│ │ │ │     Regular expression for matching ANSI escape codes
+│ │ │ │     git+https://github.com/chalk/ansi-regex.git
+│ │ │ │     https://github.com/chalk/ansi-regex#readme
+│ │ │ ├─┬ strip-ansi@3.0.1
+│ │ │ │ │ Strip ANSI escape codes
+│ │ │ │ │ git+https://github.com/chalk/strip-ansi.git
+│ │ │ │ │ https://github.com/chalk/strip-ansi#readme
+│ │ │ │ └── ansi-regex@2.1.1 deduped
+│ │ │ │     Regular expression for matching ANSI escape codes
+│ │ │ │     git+https://github.com/chalk/ansi-regex.git
+│ │ │ │     https://github.com/chalk/ansi-regex#readme
+│ │ │ └── supports-color@2.0.0
+│ │ │     Detect whether a terminal supports color
+│ │ │     git+https://github.com/chalk/supports-color.git
+│ │ │     https://github.com/chalk/supports-color#readme
+│ │ ├── esutils@2.0.2
+│ │ │   utility box for ECMAScript language tools
+│ │ │   git+ssh://git@github.com/estools/esutils.git
+│ │ │   https://github.com/estools/esutils
+│ │ └── js-tokens@3.0.2
+│ │     A regex that tokenizes JavaScript.
+│ │     git+https://github.com/lydell/js-tokens.git
+│ │     https://github.com/lydell/js-tokens#readme
+│ ├── colors@1.3.3
+│ │   get colors in your node.js console
+│ │   git+ssh://git@github.com/Marak/colors.js.git
+│ │   https://github.com/Marak/colors.js
+│ ├── diff@3.5.0
+│ │   A javascript text diff implementation.
+│ │   git://github.com/kpdecker/jsdiff.git
+│ │   https://github.com/kpdecker/jsdiff#readme
+│ ├─┬ findup-sync@0.3.0
+│ │ │ Find the first file matching a given pattern in the current directory or the nearest ancestor directory.
+│ │ │ git://github.com/cowboy/node-findup-sync.git
+│ │ │ https://github.com/cowboy/node-findup-sync
+│ │ └─┬ glob@5.0.15
+│ │   │ a little globber
+│ │   │ git://github.com/isaacs/node-glob.git
+│ │   │ https://github.com/isaacs/node-glob#readme
+│ │   ├── inflight@1.0.6 deduped
+│ │   │   Add callbacks to requests in flight to avoid async duplication
+│ │   │   git+https://github.com/npm/inflight.git
+│ │   │   https://github.com/isaacs/inflight
+│ │   ├── inherits@2.0.3 deduped
+│ │   │   Browser-friendly inheritance fully compatible with standard node.js inherits()
+│ │   │   git://github.com/isaacs/inherits.git
+│ │   │   https://github.com/isaacs/inherits#readme
+│ │   ├── minimatch@3.0.4 deduped
+│ │   │   a glob matcher in javascript
+│ │   │   git://github.com/isaacs/minimatch.git
+│ │   │   https://github.com/isaacs/minimatch#readme
+│ │   ├── once@1.4.0 deduped
+│ │   │   Run a function exactly one time
+│ │   │   git://github.com/isaacs/once.git
+│ │   │   https://github.com/isaacs/once#readme
+│ │   └── path-is-absolute@1.0.1 deduped
+│ │       Node.js 0.12 path.isAbsolute() ponyfill
+│ │       git+https://github.com/sindresorhus/path-is-absolute.git
+│ │       https://github.com/sindresorhus/path-is-absolute#readme
+│ ├── glob@7.1.4 deduped
+│ │   a little globber
+│ │   git://github.com/isaacs/node-glob.git
+│ │   https://github.com/isaacs/node-glob#readme
+│ ├─┬ optimist@0.6.1
+│ │ │ Light-weight option parsing with an argv hash. No optstrings attached.
+│ │ │ git+ssh://git@github.com/substack/node-optimist.git
+│ │ │ https://github.com/substack/node-optimist#readme
+│ │ ├── minimist@0.0.10
+│ │ │   parse argument options
+│ │ │   git://github.com/substack/minimist.git
+│ │ │   https://github.com/substack/minimist
+│ │ └── wordwrap@0.0.3
+│ │     Wrap those words. Show them at what columns to start and stop.
+│ │     git://github.com/substack/node-wordwrap.git
+│ │     https://github.com/substack/node-wordwrap#readme
+│ ├─┬ resolve@1.11.0
+│ │ │ resolve like require.resolve() on behalf of files asynchronously and synchronously
+│ │ │ git://github.com/browserify/resolve.git
+│ │ │ https://github.com/browserify/resolve#readme
+│ │ └── path-parse@1.0.6
+│ │     Node.js path.parse() ponyfill
+│ │     git+https://github.com/jbgutierrez/path-parse.git
+│ │     https://github.com/jbgutierrez/path-parse#readme
+│ └── tsutils@1.9.1
+│     utilities for working with typescript's AST
+│     git+https://github.com/ajafff/tsutils.git
+│     https://github.com/ajafff/tsutils#readme
+├─┬ tsc-watch@4.2.9
+│ │ The TypeScript compiler with onSuccess command
+│ │ git+ssh://git@github.com/gilamran/tsc-watch.git
+│ │ https://github.com/gilamran/tsc-watch#readme
+│ ├─┬ cross-spawn@7.0.3
+│ │ │ Cross platform child_process#spawn and child_process#spawnSync
+│ │ │ git+ssh://git@github.com/moxystudio/node-cross-spawn.git
+│ │ │ https://github.com/moxystudio/node-cross-spawn
+│ │ ├── path-key@3.1.1
+│ │ │   Get the PATH environment variable key cross-platform
+│ │ │   git+https://github.com/sindresorhus/path-key.git
+│ │ │   https://github.com/sindresorhus/path-key#readme
+│ │ ├─┬ shebang-command@2.0.0
+│ │ │ │ Get the command from a shebang
+│ │ │ │ git+https://github.com/kevva/shebang-command.git
+│ │ │ │ https://github.com/kevva/shebang-command#readme
+│ │ │ └── shebang-regex@3.0.0
+│ │ │     Regular expression for matching a shebang line
+│ │ │     git+https://github.com/sindresorhus/shebang-regex.git
+│ │ │     https://github.com/sindresorhus/shebang-regex#readme
+│ │ └─┬ which@2.0.2
+│ │   │ Like which(1) unix command. Find the first instance of an executable in the PATH.
+│ │   │ git://github.com/isaacs/node-which.git
+│ │   │ https://github.com/isaacs/node-which#readme
+│ │   └── isexe@2.0.0
+│ │       Minimal module to check if a file is executable.
+│ │       git+https://github.com/isaacs/isexe.git
+│ │       https://github.com/isaacs/isexe#readme
+│ ├── node-cleanup@2.1.2
+│ │   installs custom cleanup handlers that run on exiting node
+│ │   git+https://github.com/jtlapp/node-cleanup.git
+│ │   https://github.com/jtlapp/node-cleanup#readme
+│ ├─┬ ps-tree@1.2.0
+│ │ │ Get all children of a pid
+│ │ │ git+https://github.com/indexzero/ps-tree.git
+│ │ │ http://github.com/indexzero/ps-tree#readme
+│ │ └─┬ event-stream@3.3.4
+│ │   │ construct pipes of streams of events
+│ │   │ git://github.com/dominictarr/event-stream.git
+│ │   │ http://github.com/dominictarr/event-stream
+│ │   ├── duplexer@0.1.2
+│ │   │   Creates a duplex stream
+│ │   │   git://github.com/Raynos/duplexer.git
+│ │   │   https://github.com/Raynos/duplexer
+│ │   ├── from@0.1.7
+│ │   │   Easy way to make a Readable Stream
+│ │   │   git://github.com/dominictarr/from.git
+│ │   │   https://github.com/dominictarr/from#readme
+│ │   ├── map-stream@0.1.0
+│ │   │   construct pipes of streams of events
+│ │   │   git://github.com/dominictarr/map-stream.git
+│ │   │   http://github.com/dominictarr/map-stream
+│ │   ├─┬ pause-stream@0.0.11
+│ │   │ │ a ThroughStream that strictly buffers all readable events when paused.
+│ │   │ │ git://github.com/dominictarr/pause-stream.git
+│ │   │ │ https://github.com/dominictarr/pause-stream#readme
+│ │   │ └── through@2.3.8 deduped
+│ │   │     simplified stream construction
+│ │   │     git+https://github.com/dominictarr/through.git
+│ │   │     https://github.com/dominictarr/through
+│ │   ├─┬ split@0.3.3
+│ │   │ │ split a Text Stream into a Line Stream
+│ │   │ │ git://github.com/dominictarr/split.git
+│ │   │ │ http://github.com/dominictarr/split
+│ │   │ └── through@2.3.8 deduped
+│ │   │     simplified stream construction
+│ │   │     git+https://github.com/dominictarr/through.git
+│ │   │     https://github.com/dominictarr/through
+│ │   ├─┬ stream-combiner@0.0.4
+│ │   │ │ <img src=https://secure.travis-ci.org/dominictarr/stream-combiner.png?branch=master>
+│ │   │ │ git://github.com/dominictarr/stream-combiner.git
+│ │   │ │ https://github.com/dominictarr/stream-combiner
+│ │   │ └── duplexer@0.1.2 deduped
+│ │   │     Creates a duplex stream
+│ │   │     git://github.com/Raynos/duplexer.git
+│ │   │     https://github.com/Raynos/duplexer
+│ │   └── through@2.3.8
+│ │       simplified stream construction
+│ │       git+https://github.com/dominictarr/through.git
+│ │       https://github.com/dominictarr/through
+│ ├── string-argv@0.1.2
+│ │   string-argv parses a string into an argument array to mimic process.argv. This is useful when testing Command Line Utilities that you want to pass arguments to.
+│ │   git+https://github.com/mccormicka/string-argv.git
+│ │   https://github.com/mccormicka/string-argv
+│ └─┬ strip-ansi@6.0.0
+│   │ Strip ANSI escape codes from a string
+│   │ git+https://github.com/chalk/strip-ansi.git
+│   │ https://github.com/chalk/strip-ansi#readme
+│   └── ansi-regex@5.0.0
+│       Regular expression for matching ANSI escape codes
+│       git+https://github.com/chalk/ansi-regex.git
+│       https://github.com/chalk/ansi-regex#readme
+└── typescript@3.9.7
+    TypeScript is a language for application scale JavaScript development
+    git+https://github.com/Microsoft/TypeScript.git
+    https://www.typescriptlang.org/
+
