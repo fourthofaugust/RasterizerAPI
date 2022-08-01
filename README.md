@@ -1,4 +1,4 @@
-# FSG Rasterizer API
+# Rasterizer API
 
 #### Setup
 Ensure `node` is installed globally prior to setup
